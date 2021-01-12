@@ -93,6 +93,7 @@ export default function App() {
       // If the black pawn is being captured
       // then lock the previous possible white pawn positions/moves
       matrix[newRank][newFile - 1] = 'x';
+      matrix[newRank][newFile + 1] = 'x';
       matrix[newRank + 1][newFile - 1] = 'x';
       matrix[newRank + 1][newFile + 1] = 'x';
 
