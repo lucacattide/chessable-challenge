@@ -1,6 +1,7 @@
 {
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "./**/*.js"
     ],
     "compilerOptions": {
         "strict": true,

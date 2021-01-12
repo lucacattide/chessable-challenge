@@ -43,6 +43,16 @@ To run the tests:
 npm run test
 ```
 
+To run the tests with code coverage report:
+
+```
+jest --coverage
+```
+
+### Code Coverage
+
+![Branches](./coverage/badge-branches.svg "Coverage - Branches") ![Branches](./coverage/badge-functions.svg "Coverage - Functions") ![Branches](./coverage/badge-lines.svg "Coverage - Lines") ![Branches](./coverage/badge-statements.svg "Coverage - Statements")
+
 ## Deployment
 
 The production version is deployed on [Vercel (see)](https://chessable-challenge.lucacattide.vercel.app/).
