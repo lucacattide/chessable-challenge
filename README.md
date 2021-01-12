@@ -55,7 +55,7 @@ jest --coverage
 
 ## Deployment
 
-The production version is deployed on [Vercel (see)](https://chessable-challenge.lucacattide.vercel.app/).
+The production version is deployed on [Vercel (see)](https://csb-ghuwi.lucacattide.vercel.app/).
 
 ### Deploy on Vercel
 
@@ -63,6 +63,6 @@ The easiest way to deploy your app is to use the [Vercel Platform](https://verce
 
 You may alternatively use the following automated deploy button:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flucacattide%2Fchessable-challenge)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flucacattide%2Fcsb-ghuwi)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
