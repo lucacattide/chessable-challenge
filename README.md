@@ -4,7 +4,7 @@
 
 Using React:
 
-- Display a chessboard with a default FEN of: 8/2p5/8/8/8/8/8/8 w KQkq - 0 1
+- Display a chessboard with a default FEN of: ```8/2p5/8/8/8/8/8/8 w KQkq - 0 1```
 - Include a button that adds a white pawn to a random legal position on the board.
 - Allow that pawn to make legal moves across the board.
 - Do not use any 3rd-party chess libraries.
