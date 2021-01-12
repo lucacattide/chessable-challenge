@@ -99,7 +99,7 @@ export default function App() {
       // Update the pieces
       setPieces(1);
     } else {
-      // Update the new spot
+      // Else just update the new spot
       matrix[newRank][newFile] = 1;
     }
 

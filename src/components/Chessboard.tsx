@@ -73,6 +73,7 @@ const Chessboard: FC<ChessProps> = (props) => {
                       ? true
                       : false,
                 })}
+                // Display board coordinates
                 data-after={String.fromCharCode(j + 1 + 64).toLowerCase()}
                 data-before={ranks.length - i}
                 // Pass the pawn new coordinates
