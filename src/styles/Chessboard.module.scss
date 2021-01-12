@@ -12,6 +12,7 @@
 .container {
   align-items: center;
   flex-direction: column;
+  padding: 0 0 0 16px;
 
   &__board .board__ranks .ranks__square.square__file::after,
   &__board .board__ranks .ranks__square.square__rank::before,
