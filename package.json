@@ -1,10 +1,13 @@
 {
-  "name": "react-typescript",
+  "name": "chessable-challenge",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": ["typescript", "react", "starter"],
+  "description": "Chessable coding challenge",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "clsx": "1.1.1",
+    "node-sass": "5.0.0",
+    "prop-types": "15.7.2",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-scripts": "3.3.0"
@@ -20,5 +23,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

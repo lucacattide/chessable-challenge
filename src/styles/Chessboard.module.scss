@@ -1,0 +1,124 @@
+// SASS Start
+// SASS imports
+@import 'base';
+
+// Container
+.button__disabled,
+.container__board .board__ranks .ranks__square.square__active:hover,
+.container__controls .controls__button:hover {
+  opacity: .7 !important;
+}
+
+.container {
+  align-items: center;
+  flex-direction: column;
+
+  &__board .board__ranks .ranks__square.square__file::after,
+  &__board .board__ranks .ranks__square.square__rank::before,
+  &__controls .controls__button,
+  &__title {
+    font-family: $font;
+  }
+
+  &,
+  &__board .board__ranks,
+  &__controls {
+    display: flex;
+  }
+
+  &__board .board__ranks .ranks__square.square__active:hover,
+  &__controls .controls__button:hover {
+    cursor: pointer;
+  }
+
+  // Board
+  &__board {
+    max-width: 500px;
+    padding: 0 16px;
+    text-align: center;
+    width: calc(100% - 32px);
+
+    .board__ranks:nth-child(odd) .ranks__square:nth-child(even),
+    .board__ranks:nth-child(even) .ranks__square:nth-child(odd) {
+      background-color: $brown;
+    }
+
+    .board__ranks:nth-child(odd) .ranks__square:nth-child(odd),
+    .board__ranks:nth-child(even) .ranks__square:nth-child(even) {
+      background-color: $brown-1;
+    }
+
+    .board__ranks {
+      flex-flow: wrap;
+
+      .ranks__square {
+        flex: 0 0 12.5%;
+        padding: 0 0 12.5%;
+        position: relative;
+
+        &.square__file::after {
+          content: attr(data-after);
+          position: absolute;
+          bottom: -24px;
+          text-align: center;
+        }
+
+        &.square__rank::before {
+          content: attr(data-before);
+          left: -24px;
+          position: absolute;
+          top: 30%;
+        }
+
+        &.square__active {
+          box-shadow: inset 0 0 0 3px $blue;
+        }
+
+        .square__piece {
+          bottom: 0;
+          left: 0;
+          overflow: hidden;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__controls {
+    flex-direction: column;
+    margin: 2em 0 0;
+
+    @media ($media-tablet) {
+      flex-direction: row;
+      margin: 3em 0 0;
+    }
+
+    .controls__button {
+      background-color: $blue;
+      border: 0;
+      color: $white;
+      font-weight: bold;
+      margin: 1em 16px;
+      outline: none;
+      padding: 1em 16px;
+      text-transform: uppercase;
+      transition: all .3s ease-in-out;
+    }
+
+    .controls__title {
+      // Hidden but present for SEO
+      display: none;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+// SASS End
