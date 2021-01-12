@@ -1,4 +1,4 @@
-# GreenJinn Coding Challenge
+# Chessable Coding Challenge
 
 ## User Story
 
