@@ -25,6 +25,7 @@ Using React:
 
   ```
     i.e.
+
        a b c d e f g h
       -----------------
     8 |x|0|0|x|x|x|x|x|
